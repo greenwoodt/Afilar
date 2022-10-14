@@ -1,0 +1,2 @@
+class Afilador < ApplicationRecord
+end
