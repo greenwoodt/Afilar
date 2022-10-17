@@ -7,7 +7,6 @@ class CreateAfiladors < ActiveRecord::Migration[7.0]
       t.string :photo
       t.integer :telephone
       t.string :address
-      t.string :photo
 
       t.timestamps
     end
