@@ -5,4 +5,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  # resources for users unders customers and sharpeners (afiladors)
+  resources :customers
+  resources :afiladors
+
 end
