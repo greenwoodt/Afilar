@@ -10,4 +10,11 @@ Rails.application.routes.draw do
   resources :customers
   resources :afiladors
 
+  resources :afiladors, only: [:index, :new, :create, :edit, :update] do
+    resources :bookings, [:index, :new, :create, :edit, :update]
+  end
+# resources :customers, only: [:index, new, :create, :edit, :update] do
+#   res
+#   end
+
 end
