@@ -11,9 +11,9 @@ Rails.application.routes.draw do
   resources :afiladors
 
   resources :afiladors, only: [:index, :new, :create, :edit, :update] do
-    resources :bookings, only: [:index, :new, :create, :edit, :update]
+    resources :bookings, only: [:index, :new, :create, :show, :destroy]
   end
 resources :customers, only: [:index, :new, :create, :edit, :update] do
-  resources :bookings, only: [:index, :new, :create, :edit, :update]
+  resources :bookings, only: [:index, :new, :create, :show, :destroy]
   end
 end
