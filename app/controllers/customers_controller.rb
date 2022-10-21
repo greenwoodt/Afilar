@@ -4,13 +4,13 @@ class CustomersController < ApplicationController
   end
 
 
-#instance method to create a new customer profile
+# Instance method to create a new customer profile
   def new
     @customer = Customer.new
     authorize @customer
   end
 
-#customer is dependent on the User model under devise to create a customer profile to work.
+# Customer is dependent on the User model under devise to create a customer profile to work.
   def create
     @customer = Customer.new(customer_params)
     @customer.user = current_user
@@ -23,7 +23,7 @@ class CustomersController < ApplicationController
     end
   end
 
-#edit customer profile
+# Edit customer profile
   def edit
     @customer = Customer.find(params[:id])
     authorize @customer
