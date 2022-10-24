@@ -7,4 +7,6 @@ class AfiladorsController < ApplicationController
   def show
     @afilador = Afilador.find(params[:id])
   end
+
+
 end
