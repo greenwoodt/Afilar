@@ -3,7 +3,6 @@ class CustomersController < ApplicationController
     @customer = Customer.find(params[:id])
   end
 
-
 # Instance method to create a new customer profile
   def new
     @customer = Customer.new
@@ -42,6 +41,4 @@ class CustomersController < ApplicationController
     @customer.destroy
     redirect_to root_path, status: :see_other
   end
-
-
 end
